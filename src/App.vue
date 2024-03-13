@@ -1,10 +1,17 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <app-layout>
+    <router-view />
+  </app-layout>
 </template>
+
+<script>
+import AppLayout from "@/components/AppLayout";
+export default {
+  components: {
+    AppLayout,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
